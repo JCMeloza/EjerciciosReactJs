@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Link } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<>
+			<div>
+				<h1>Ejercicios en React</h1>
+				<ul>
+					<li>
+						<Link to="/ejercicio1">1. Cambiador de Color</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio2">2. Contador de Clics</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio3">3. Lista Dinámica</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio4">4. Filtro de Búsqueda</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio5">5. Calculadora</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio6">6. Temporizador</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio7">7. Generador de Contraseñas</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio8">8. Contador de Palabras</Link>
+					</li>
+					<li>
+						<Link to="/ejercicio9">9. Lista de Tareas</Link>
+					</li>
+				</ul>
+			</div>
+		</>
+	);
 }
 
-export default App
+export default App;
